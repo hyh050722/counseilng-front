@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" contend="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글쓰기</title>
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <div class="board_wrap">
+      <div class="board_title">
+        <strong>글쓰기</strong>
+        <p>고민을 작성해 보아요.</p>
+      </div>
+
+      <div class="board_write_wrap">
+        <div class="board_write">
+          <div class="title">
+            <dl>
+              <dt>୧(๑•̀⌄•́๑)૭</dt>
+              <dd><input id="title" type="text" placeholder="제목 입력" /></dd>
+            </dl>
+          </div>
+          <div class="cont">
+            <textarea id="content" placeholder="내용입력"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="frame">
+      <div class="center">
+        <button id="create-post" class="button button-first" data-type="square">
+          등록
+        </button>
+        <button class="button button-second" data-type="circle">취소</button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="button.js"></script>
+  </body>
+</html>

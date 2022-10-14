@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./api.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>CTQ</title>
+  </head>
+
+  <body>
+    <div class="signup_wrapper">
+      <div class="signup_logo">Seil</div>
+
+      <form class="signup_form">
+        <input
+          id="SIGNUP_ID"
+          class="signup_text"
+          type="text"
+          placeholder="E-mail"
+        />
+        <input
+          id="SIGNUP_NICKNAME"
+          class="signup_text"
+          type="text"
+          placeholder="Nickname"
+        />
+        <input
+          id="SIGNUP_PW"
+          class="signup_text"
+          type="password"
+          placeholder="Password"
+        />
+        <button
+          id="SIGNUP_BTN"
+          class="signup_btn"
+          type="button"
+          onclick="SignUpAPI()"
+        >
+          회원가입
+        </button>
+      </form>
+
+      <a class="signup_bottom" href="./login.html"> 이미 계정이 있으십니까?</a>
+    </div>
+  </body>
+</html>
