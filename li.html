@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+  
+<title>conseling</title>
+
+ <link rel="stylesheet" href="li.css">
+</head>
+
+<body translate="no" >
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>계정생성</h1>			
+			<input type="text" placeholder="이름" />
+			<input type="email" placeholder="이메일" />
+			<input type="password" placeholder="비밀번호" />
+			<button class="bt1">회원가입</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>로그인</h1>
+			<input type="email" placeholder="이메일" />
+			<input type="password" placeholder="비밀번호" />
+			<a href="#">비밀번호 찾기</a>
+			<button class="bt2">로그인</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">				
+				<button class="ghost" id="signIn">로그인</button>
+			</div>
+			<div class="overlay-panel overlay-right">				
+				<button class="ghost" id="signUp">회원가입</button>
+			</div>
+		</div>
+	</div>
+</div>
+  
+      <script id="rendered-js" >
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+  container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+  container.classList.remove("right-panel-active");
+});
+    </script>
+</body>
+
+</html>

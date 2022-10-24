@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+  
+<title>conseling</title>
+
+ <link rel="stylesheet" href="scss/pf1.css">
+ <style>
+
+.btn{
+  background:#f6f6f6;
+  color:#EAC7CC;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  border-radius: 0;
+
+   margin-bottom: 15px;
+}
+  
+  .btn:hover{
+  background:#EAC7CC;
+  color:#f6f6f6;
+}
+.btn:before,.btn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f6f6f6;
+  transition:400ms ease all;
+}
+.btn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn:hover:before,.btn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.btn.name{
+width: 196px;
+}
+.btn.name1{
+width: 196px;
+
+}
+.btn.age{
+  width: 196px;
+}
+.btn.tall{
+
+  width: 196px;
+}
+.btn.co{
+  width: 196px;
+}
+
+
+ </style>
+</head>
+<body translate="no" >
+    <div class="container">
+        <div class="welcome">
+          <div class="pinkbox">
+            <div class="signup nodisplay">
+              <h1>세부정보</h1>
+              <form autocomplete="off">
+                <!-- <input type="text" placeholder="username">
+                <input type="email" placeholder="email">
+                <input type="password" placeholder="password">
+                <input type="password" placeholder="confirm password"> -->
+                
+                <button class="btn age">21세</button>
+                <button class="btn tall">164cm</button>
+                <button class="btn co">SM</button>
+                
+                
+              </form>
+            </div>
+            <div class="signin">
+              <h1>프로필</h1>
+              <form class="more-padding" autocomplete="off">
+                <!-- <input type="text" placeholder="username">
+                <input type="password" placeholder="password">
+                <div class="checkbox">
+                  <input type="checkbox" id="remember" /><label for="remember">remember me</label>
+                </div>
+      
+                <button class="button submit">프로필</button> -->
+                
+                <button class="btn aespa">aespa</button>
+                <button class="btn name">윈터</button>
+                <button class="btn name1">김민정</button>
+              </form>
+            </div>
+          </div>
+          <div class="leftbox">
+            <h2 class="title"><span></span>세부정보</h2>
+            <p class="desc"> <span></span></p>
+            <img class="flower smaller" src="https://t1.daumcdn.net/thumb/R1024x0/?fname=https://image.fomos.kr/contents/images/board/2022/0816/1660616397238148.jpg" alt="1357d638624297b" border="0">
+            <p class="account"></p>
+            <button class="button" id="signin">프로필</button>
+          </div>
+          <div class="rightbox">
+            <h2 class="title"><span></span>프로필</h2>
+            <p class="desc">  <span></span></p>
+            <img class="flower" src="https://t1.daumcdn.net/thumb/R1024x0/?fname=https://image.fomos.kr/contents/images/board/2022/0816/1660616397238148.jpg"/>
+            <p class="account"></p>
+            <button class="button" id="signup">세부정보</button>
+          </div>
+        </div>
+       </div>
+       <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      
+  <script id="rendered-js">   
+
+$('#signup').click(function() {
+  $('.pinkbox').css('transform', 'translateX(80%)');
+  $('.signin').addClass('nodisplay');
+  $('.signup').removeClass('nodisplay');
+});
+
+$('#signin').click(function() {
+  $('.pinkbox').css('transform', 'translateX(0%)');
+  $('.signup').addClass('nodisplay');
+  $('.signin').removeClass('nodisplay');
+});
+</script>
+</body>
+
+</html>
